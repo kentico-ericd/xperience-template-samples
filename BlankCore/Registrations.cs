@@ -1,7 +1,7 @@
 ﻿using BlankCore.BasicTemplate;
 using Kentico.PageBuilder.Web.Mvc.PageTemplates;
 
-#region "Page templates"
+#region "Page templates - Basic"
 
 [assembly: RegisterPageTemplate("BasicTemplate",
     "Basic template",
@@ -10,8 +10,7 @@ using Kentico.PageBuilder.Web.Mvc.PageTemplates;
     IconClass = "icon-chevron-up")]
 [assembly: RegisterPageTemplate("AltBasicTemplate",
     "Alt basic template",
-    typeof(BasicTemplateProperties),
-    "~/BasicTemplate/_AltTemplate.cshtml",
+    customViewName: "~/BasicTemplate/_AltTemplate.cshtml",
     IconClass = "icon-chevron-up-circle")]
 
 #endregion

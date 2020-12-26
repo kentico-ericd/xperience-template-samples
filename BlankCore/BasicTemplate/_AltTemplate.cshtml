@@ -6,10 +6,10 @@
 @{
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-@model ComponentViewModel<BasicTemplateProperties>
+@model ComponentViewModel
 
-<h1>Alt basic template (ID @Model.Page.DocumentID)</h1>
+<h1>Alt basic template (ID @Model.Page.DocumentID) - no properties</h1>
 
-<div style="background-color:@Model.Properties.Color">
+<div>
     <editable-area area-identifier="area1" />
 </div>
