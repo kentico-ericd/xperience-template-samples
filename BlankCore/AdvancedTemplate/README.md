@@ -1,4 +1,4 @@
-To create a template for advanced routes based on the content tree:
+To create a template for [advanced routes](https://docs.xperience.io/developing-websites/implementing-routing/content-tree-based-routing/setting-up-content-tree-based-routing#Settingupcontenttreebasedrouting-Advanced) based on the content tree:
 
 1. Create a [controller](https://github.com/kentico-ericd/xperience-template-samples/blob/master/BlankCore/AdvancedTemplate/MyAdvancedController.cs) that returns `TemplateResult`
 1. [Register](https://github.com/kentico-ericd/xperience-template-samples/blob/master/BlankCore/Registrations.cs#L37) the advanced route with your page type
@@ -6,4 +6,5 @@ To create a template for advanced routes based on the content tree:
 1. Use [`@model ComponentViewModel`](https://github.com/kentico-ericd/xperience-template-samples/blob/master/BlankCore/AdvancedTemplate/_Template.cshtml#L9) to get data about the page in the view
 1. __(Optional)__ Create page template [properties class](https://github.com/kentico-ericd/xperience-template-samples/blob/master/BlankCore/AdvancedTemplate/AdvancedTemplateProperties.cs) that inherits `IPageTemplateProperties` and change the model to `ComponentViewModel<YourPropertiesClass>`
 1. __(Optional)__ Create a [filter class](https://github.com/kentico-ericd/xperience-template-samples/blob/master/BlankCore/AdvancedTemplate/AdvancedTemplateFilter.cs) which inherits `IPageTemplateFilter` and defines what templates are available for your page type and [register](https://github.com/kentico-ericd/xperience-template-samples/blob/master/BlankCore/Startup.cs#L61) it
+1. __(Optional)__ Create a [service](https://github.com/kentico-ericd/xperience-template-samples/blob/master/BlankCore/AdvancedTemplate/CustomServiceForMessages.cs) that will be [injected](https://github.com/kentico-ericd/xperience-template-samples/blob/master/BlankCore/AdvancedTemplate/_TemplateWithService.cshtml#L10) into the template and [register it](https://github.com/kentico-ericd/xperience-template-samples/blob/master/BlankCore/Startup.cs#L63)
 1. [Register](https://github.com/kentico-ericd/xperience-template-samples/blob/master/BlankCore/Registrations.cs#L22) the template
