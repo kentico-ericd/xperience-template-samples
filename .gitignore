@@ -1,4 +1,7 @@
 .vs
 cms
 lib
+bin
+obj
+publish
 packages

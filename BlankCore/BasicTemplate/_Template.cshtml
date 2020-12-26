@@ -1,0 +1,15 @@
+﻿@using BlankCore.BasicTemplate
+@using Kentico.PageBuilder.Web.Mvc
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@addTagHelper *, Kentico.Content.Web.Mvc
+
+@{ 
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@model ComponentViewModel<BasicTemplateProperties>
+
+<h1>Basic template (ID @Model.Page.DocumentID)</h1>
+
+<div style="background-color:@Model.Properties.Color">
+    <editable-area area-identifier="area1" />
+</div>
