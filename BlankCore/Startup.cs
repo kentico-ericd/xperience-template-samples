@@ -58,6 +58,7 @@ namespace BlankSiteCore
             services.AddControllersWithViews();
 
             PageBuilderFilters.PageTemplates.Add(new BasicTemplateFilter());
+            PageBuilderFilters.PageTemplates.Add(new AdvancedTemplateFilter());
 
             services.AddSingleton<CustomServiceForMessages>();
         }
