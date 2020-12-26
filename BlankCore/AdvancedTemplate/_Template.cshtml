@@ -1,0 +1,19 @@
+﻿@using Kentico.PageBuilder.Web.Mvc
+@using BlankCore.AdvancedTemplate
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@addTagHelper *, Kentico.Content.Web.Mvc
+
+@{ 
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@model ComponentViewModel<AdvancedTemplateProperties>
+
+<h1>Advanced template (ID @Model.Page.DocumentID)</h1>
+
+<blockquote>
+    @Model.Properties.Message
+</blockquote>
+
+<div>
+    <editable-area area-identifier="area1" />
+</div>

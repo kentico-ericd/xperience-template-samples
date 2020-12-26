@@ -1,3 +1,4 @@
+using BlankCore.AdvancedTemplate;
 using BlankCore.BasicTemplate;
 using Kentico.Content.Web.Mvc;
 using Kentico.Content.Web.Mvc.Routing;
@@ -57,6 +58,8 @@ namespace BlankSiteCore
             services.AddControllersWithViews();
 
             PageBuilderFilters.PageTemplates.Add(new BasicTemplateFilter());
+
+            services.AddSingleton<CustomServiceForMessages>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

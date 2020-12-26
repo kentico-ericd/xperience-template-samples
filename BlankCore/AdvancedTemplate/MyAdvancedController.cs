@@ -1,5 +1,6 @@
 ﻿using CMS.DocumentEngine;
 using Kentico.Content.Web.Mvc;
+using Kentico.PageBuilder.Web.Mvc.PageTemplates;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BlankCore.AdvancedTemplate
@@ -17,7 +18,9 @@ namespace BlankCore.AdvancedTemplate
         {
             var page = dataRetriever.Retrieve<TreeNode>().Page;
 
-            return Content(page.DocumentName);
+            // Do some cool stuff here
+
+            return new TemplateResult();
         }
     }
 }

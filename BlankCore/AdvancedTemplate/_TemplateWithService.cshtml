@@ -1,0 +1,23 @@
+﻿@using Kentico.PageBuilder.Web.Mvc
+@using BlankCore.AdvancedTemplate
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@addTagHelper *, Kentico.Content.Web.Mvc
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@model ComponentViewModel<AdvancedTemplateProperties>
+@inject CustomServiceForMessages templateService
+@{
+    var msg = string.IsNullOrEmpty(Model.Properties.Message) ? templateService.GetMessageFromExternalAPI() : Model.Properties.Message;
+}
+
+<h1>Advanced template with service (ID @Model.Page.DocumentID)</h1>
+
+<blockquote>
+    @Html.Raw(msg)
+</blockquote>
+
+<div>
+    <editable-area area-identifier="area1" />
+</div>
