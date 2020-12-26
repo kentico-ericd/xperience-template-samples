@@ -1,4 +1,6 @@
-﻿using BlankCore.BasicTemplate;
+﻿using BlankCore.AdvancedTemplate;
+using BlankCore.BasicTemplate;
+using Kentico.Content.Web.Mvc.Routing;
 using Kentico.PageBuilder.Web.Mvc.PageTemplates;
 
 #region "Page templates - Basic"
@@ -12,6 +14,12 @@ using Kentico.PageBuilder.Web.Mvc.PageTemplates;
     "Alt basic template",
     customViewName: "~/BasicTemplate/_AltTemplate.cshtml",
     IconClass = "icon-chevron-up-circle")]
+
+#endregion
+
+#region "Controllers - Advanced routes"
+
+[assembly: RegisterPageRoute("TemplatePage.Advanced", typeof(MyAdvancedController), ActionName = "Index")]
 
 #endregion
 

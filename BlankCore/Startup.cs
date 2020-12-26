@@ -1,3 +1,4 @@
+using BlankCore.BasicTemplate;
 using Kentico.Content.Web.Mvc;
 using Kentico.Content.Web.Mvc.Routing;
 using Kentico.PageBuilder.Web.Mvc;
@@ -5,6 +6,7 @@ using Kentico.Web.Mvc;
 
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace BlankSiteCore
@@ -53,6 +55,8 @@ namespace BlankSiteCore
             // services.AddAuthorization();
 
             services.AddControllersWithViews();
+
+            PageBuilderFilters.PageTemplates.Add(new BasicTemplateFilter());
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

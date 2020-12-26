@@ -8,7 +8,15 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="Views\_ViewImports.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="kentico.xperience.aspnetcore.webapp" Version="13.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Views\_ViewImports.cshtml" />
   </ItemGroup>
 
 </Project>
