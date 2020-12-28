@@ -836,13 +836,11 @@
     <Content Include="Views\web.config">
       <SubType>Designer</SubType>
     </Content>
-    <Content Include="BasicTemplate\README.md" />
     <Content Include="BasicTemplate\_AltTemplate.cshtml" />
     <Content Include="BasicTemplate\_Template.cshtml" />
     <Content Include="BasicTemplate\web.config">
       <SubType>Designer</SubType>
     </Content>
-    <Content Include="AdvancedTemplate\README.md" />
     <Content Include="AdvancedTemplate\_Template.cshtml" />
     <Content Include="AdvancedTemplate\web.config">
       <SubType>Designer</SubType>

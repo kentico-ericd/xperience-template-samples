@@ -20,17 +20,7 @@ using Kentico.PageBuilder.Web.Mvc.PageTemplates;
 
 #region "Page templates - Advanced"
 
-[assembly: RegisterPageTemplate(Registrations.TEMPLATE_ADVANCED,
-    "Advanced template",
-    typeof(AdvancedTemplateProperties),
-    "~/AdvancedTemplate/_Template.cshtml",
-    IconClass = "icon-chevron-double-up")]
-
-#endregion
-
-#region "Controllers - Advanced routes"
-
-[assembly: RegisterPageRoute(Registrations.PAGETYPE_ADVANCED, typeof(MyAdvancedController), ActionName = "Index")]
+[assembly: RegisterPageTemplate(Registrations.TEMPLATE_ADVANCED, typeof(MyAdvancedController), "Advanced template")]
 
 #endregion
 
