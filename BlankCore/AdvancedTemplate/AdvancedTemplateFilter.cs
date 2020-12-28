@@ -9,7 +9,7 @@ namespace BlankCore.AdvancedTemplate
     {
         public IEnumerable<PageTemplateDefinition> Filter(IEnumerable<PageTemplateDefinition> pageTemplates, PageTemplateFilterContext context)
         {
-            if (context.PageType.Equals("TemplatePage.Advanced", StringComparison.InvariantCultureIgnoreCase))
+            if (context.PageType.Equals(Registrations.PAGETYPE_ADVANCED, StringComparison.InvariantCultureIgnoreCase))
             {
                 return pageTemplates.Where(t => GetAllowedTemplates().Contains(t.Identifier));
             }
@@ -17,6 +17,6 @@ namespace BlankCore.AdvancedTemplate
             return pageTemplates.Where(t => !GetAllowedTemplates().Contains(t.Identifier));
         }
 
-        public IEnumerable<string> GetAllowedTemplates() => new string[] { "AdvancedTemplate", "AdvancedTemplateWithService" };
+        public IEnumerable<string> GetAllowedTemplates() => new string[] { Registrations.TEMPLATE_ADVANCED, Registrations.TEMPLATE_ADVANCEDSERVICE };
     }
 }
