@@ -1,0 +1,17 @@
+﻿@using Kentico.PageBuilder.Web.Mvc
+@using BlankMVC.AdvancedTemplate
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@model AdvancedTemplateViewModel
+
+<h1>Advanced template (ID @Model.Page.DocumentID)</h1>
+
+<blockquote>
+    @Html.Raw(Model.Message)
+</blockquote>
+
+<div>
+    @Html.Kentico().EditableArea("area1")
+</div>

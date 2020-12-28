@@ -53,6 +53,12 @@
       <HintPath>..\packages\Antlr.3.5.0.2\lib\Antlr3.Runtime.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="Autofac, Version=6.1.0.0, Culture=neutral, PublicKeyToken=17863af14b0044da, processorArchitecture=MSIL">
+      <HintPath>..\packages\Autofac.6.1.0\lib\netstandard2.0\Autofac.dll</HintPath>
+    </Reference>
+    <Reference Include="Autofac.Integration.Mvc, Version=6.0.0.0, Culture=neutral, PublicKeyToken=17863af14b0044da, processorArchitecture=MSIL">
+      <HintPath>..\packages\Autofac.Mvc5.6.0.0\lib\net472\Autofac.Integration.Mvc.dll</HintPath>
+    </Reference>
     <Reference Include="AWSSDK.Core, Version=3.3.0.0, Culture=neutral, PublicKeyToken=885c28607f98e604">
       <HintPath>..\packages\AWSSDK.Core.3.5.1.13\lib\net45\AWSSDK.Core.dll</HintPath>
       <Private>True</Private>
@@ -663,6 +669,9 @@
       <HintPath>..\packages\System.Data.HashFunction.Interfaces.2.0.0\lib\net45\System.Data.HashFunction.Interfaces.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="System.Diagnostics.DiagnosticSource, Version=4.0.5.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Diagnostics.DiagnosticSource.4.7.1\lib\net46\System.Diagnostics.DiagnosticSource.dll</HintPath>
+    </Reference>
     <Reference Include="System.IdentityModel.Tokens.Jwt, Version=6.7.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
       <HintPath>..\packages\System.IdentityModel.Tokens.Jwt.6.7.1\lib\net461\System.IdentityModel.Tokens.Jwt.dll</HintPath>
       <Private>True</Private>
@@ -799,26 +808,43 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\site.css" />
     <Content Include="Global.asax" />
-    <Content Include="Scripts\site.js" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdvancedTemplate\AdvancedTemplateFilter.cs" />
+    <Compile Include="AdvancedTemplate\AdvancedTemplateProperties.cs" />
+    <Compile Include="AdvancedTemplate\AdvancedTemplateViewModel.cs" />
+    <Compile Include="AdvancedTemplate\MyAdvancedController.cs" />
     <Compile Include="App_Start\ApplicationConfig.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\CMSRegistrationSource.cs" />
+    <Compile Include="App_Start\DependencyResolverConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="BasicTemplate\BasicTemplateFilter.cs" />
+    <Compile Include="BasicTemplate\BasicTemplateProperties.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\WebAssemblyInfo.cs" />
+    <Compile Include="Registrations.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="BasicTemplate\README.md" />
+    <Content Include="BasicTemplate\_AltTemplate.cshtml" />
+    <Content Include="BasicTemplate\_Template.cshtml" />
+    <Content Include="BasicTemplate\web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="AdvancedTemplate\README.md" />
+    <Content Include="AdvancedTemplate\_Template.cshtml" />
+    <Content Include="AdvancedTemplate\web.config">
       <SubType>Designer</SubType>
     </Content>
     <None Include="packages.config">
@@ -826,11 +852,9 @@
     </None>
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\_ViewStart.cshtml" />
-    <Content Include="Views\Home\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup />
   <PropertyGroup>

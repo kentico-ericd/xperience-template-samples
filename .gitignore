@@ -3,5 +3,7 @@ cms
 lib
 bin
 obj
+BlankMVC/bin
+BlankMVC/obj
 publish
 packages

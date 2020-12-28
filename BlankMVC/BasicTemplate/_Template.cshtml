@@ -1,0 +1,13 @@
+﻿@using BlankMVC.BasicTemplate
+@using Kentico.PageBuilder.Web.Mvc
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@model ComponentViewModel<BasicTemplateProperties>
+
+<h1>Basic template (ID @Model.Page.DocumentID)</h1>
+
+<div style="background-color:@Model.Properties.Color">
+    @Html.Kentico().EditableArea("area1")
+</div>

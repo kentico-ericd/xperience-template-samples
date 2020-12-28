@@ -1,7 +1,7 @@
-using Kentico.Content.Web.Mvc;
+using BlankMVC.BasicTemplate;
+using BlankMVC.AdvancedTemplate;
 using Kentico.Content.Web.Mvc.Routing;
 using Kentico.PageBuilder.Web.Mvc;
-using Kentico.Scheduler.Web.Mvc;
 using Kentico.Web.Mvc;
 
 namespace BlankMVC
@@ -10,16 +10,11 @@ namespace BlankMVC
     {
         public static void RegisterFeatures(IApplicationBuilder builder)
         {
-            // Enable required Kentico features
+            builder.UsePageBuilder();
+            builder.UsePageRouting();
 
-            // Uncomment the following to use the Page builder feature
-            //builder.UsePageBuilder();
-
-            //builder.UseScheduler();
-            builder.UsePageRouting(new PageRoutingOptions
-            {
-                //EnableAlternativeUrls = true
-            });
+            PageBuilderFilters.PageTemplates.Add(new BasicTemplateFilter());
+            PageBuilderFilters.PageTemplates.Add(new AdvancedTemplateFilter());
         }
     }
 }
