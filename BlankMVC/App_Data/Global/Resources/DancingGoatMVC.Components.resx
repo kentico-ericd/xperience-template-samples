@@ -1,0 +1,357 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="DancingGoatMVC.ConditionType.IsInContactGroup.Description" xml:space="preserve">
+    <value>Evaluates if the current contact is in one of the contact groups.</value>
+  </data>
+  <data name="DancingGoatMVC.ConditionType.IsInContactGroup.Hint" xml:space="preserve">
+    <value>Display to visitors who match at least one of the selected contact groups:</value>
+  </data>
+  <data name="DancingGoatMVC.ConditionType.IsInContactGroup.Name" xml:space="preserve">
+    <value>Is in contact group</value>
+  </data>
+  <data name="DancingGoatMVC.ConditionType.IsInContactGroup.NoContactGroups" xml:space="preserve">
+    <value>No contact groups to select.</value>
+  </data>
+  <data name="DancingGoatMVC.ConditionType.IsInPersona.Description" xml:space="preserve">
+    <value>Evaluates if the current contact is in the persona.</value>
+  </data>
+  <data name="DancingGoatMVC.ConditionType.IsInPersona.Hint" xml:space="preserve">
+    <value>Display to visitors who match the selected persona:</value>
+  </data>
+  <data name="DancingGoatMVC.ConditionType.IsInPersona.Name" xml:space="preserve">
+    <value>Is in persona</value>
+  </data>
+  <data name="DancingGoatMVC.ConditionType.IsInPersona.NoPersonas" xml:space="preserve">
+    <value>No personas to select.</value>
+  </data>
+  <data name="DancingGoatMVC.FormSection.TwoColumn.Description" xml:space="preserve">
+    <value>Two columns of form fields with equal width.</value>
+  </data>
+  <data name="DancingGoatMVC.FormSection.TwoColumn.Name" xml:space="preserve">
+    <value>Two columns</value>
+  </data>
+  <data name="DancingGoatMVC.InlineEditors.ImageAttachmentUploader.DropText" xml:space="preserve">
+    <value>Drop image here or &lt;a class="dz-clickable"&gt;click&lt;/a&gt; to browse</value>
+  </data>
+  <data name="DancingGoatMVC.InlineEditors.ImageUploaderEditor.InvalidFileType" xml:space="preserve">
+    <value>You can't upload files of this type.</value>
+  </data>
+  <data name="DancingGoatMVC.InlineEditors.SpinnerEditor.Minus" xml:space="preserve">
+    <value>Decrease number of displayed items.</value>
+  </data>
+  <data name="DancingGoatMVC.InlineEditors.SpinnerEditor.Plus" xml:space="preserve">
+    <value>Increase number of displayed items.</value>
+  </data>
+  <data name="DancingGoatMVC.InlineEditors.TextEditor.Placeholder" xml:space="preserve">
+    <value>Type your text</value>
+  </data>
+  <data name="dancinggoatmvc.pagetemplate.landingpagesinglecolumn.description" xml:space="preserve">
+    <value>A default single column page template with two sections differentiated by a background color.</value>
+  </data>
+  <data name="DancingGoatMVC.PageTemplate.LandingPageSingleColumn.Name" xml:space="preserve">
+    <value>Single column landing page</value>
+  </data>
+  <data name="DancingGoatMVC.Section.ColorScheme.Label" xml:space="preserve">
+    <value>Color scheme</value>
+  </data>
+  <data name="DancingGoatMVC.Section.ColorScheme.LightGray" xml:space="preserve">
+    <value>Light gray</value>
+  </data>
+  <data name="DancingGoatMVC.Section.ColorScheme.None" xml:space="preserve">
+    <value>None</value>
+  </data>
+  <data name="DancingGoatMVC.Section.ColorScheme.Red" xml:space="preserve">
+    <value>Brick red</value>
+  </data>
+  <data name="DancingGoatMVC.Section.SingleColumn.Description" xml:space="preserve">
+    <value>Single-column section with one zone.</value>
+  </data>
+  <data name="DancingGoatMVC.Section.SingleColumn.Name" xml:space="preserve">
+    <value>Single column</value>
+  </data>
+  <data name="DancingGoatMVC.Section.ThreeColumn.Description" xml:space="preserve">
+    <value>Three-column section with three zones.</value>
+  </data>
+  <data name="DancingGoatMVC.Section.ThreeColumn.Name" xml:space="preserve">
+    <value>Three columns</value>
+  </data>
+  <data name="DancingGoatMVC.Section.TwoColumn.Description" xml:space="preserve">
+    <value>Two-column section with two zones.</value>
+  </data>
+  <data name="DancingGoatMVC.Section.TwoColumn.Name" xml:space="preserve">
+    <value>Two columns</value>
+  </data>
+  <data name="DancingGoatMVC.Widget.Articles.Description" xml:space="preserve">
+    <value>Displays the latest articles from the Dancing Goat sample site.</value>
+  </data>
+  <data name="DancingGoatMVC.Widget.Articles.LatestOne" xml:space="preserve">
+    <value>Latest article</value>
+  </data>
+  <data name="DancingGoatMVC.Widget.Articles.More" xml:space="preserve">
+    <value>More articles</value>
+  </data>
+  <data name="DancingGoatMVC.Widget.Articles.Name" xml:space="preserve">
+    <value>Latest articles</value>
+  </data>
+  <data name="DancingGoatMVC.Widget.Banner.Description" xml:space="preserve">
+    <value>Displays the text and image.</value>
+  </data>
+  <data name="DancingGoatMVC.Widget.Banner.Heading" xml:space="preserve">
+    <value>Roasting premium coffee</value>
+  </data>
+  <data name="DancingGoatMVC.Widget.Banner.Name" xml:space="preserve">
+    <value>Banner</value>
+  </data>
+  <data name="DancingGoatMVC.Widget.Card.Description" xml:space="preserve">
+    <value>Displays an image with a centered text.</value>
+  </data>
+  <data name="DancingGoatMVC.Widget.Card.Name" xml:space="preserve">
+    <value>Card</value>
+  </data>
+  <data name="DancingGoatMVC.Widget.HeroImage.ButtonTarget" xml:space="preserve">
+    <value>Button target</value>
+  </data>
+  <data name="DancingGoatMVC.Widget.HeroImage.ColorScheme" xml:space="preserve">
+    <value>Color scheme</value>
+  </data>
+  <data name="DancingGoatMVC.Widget.HeroImage.ColorScheme.Dark" xml:space="preserve">
+    <value>Dark</value>
+  </data>
+  <data name="DancingGoatMVC.Widget.HeroImage.ColorScheme.Light" xml:space="preserve">
+    <value>Light</value>
+  </data>
+  <data name="DancingGoatMVC.Widget.HeroImage.Description" xml:space="preserve">
+    <value>Displays an image, text, and a CTA button.</value>
+  </data>
+  <data name="DancingGoatMVC.Widget.HeroImage.Name" xml:space="preserve">
+    <value>Hero image</value>
+  </data>
+  <data name="DancingGoatMVC.Widget.Image.Description" xml:space="preserve">
+    <value>Allows to upload and display an image.</value>
+  </data>
+  <data name="DancingGoatMVC.Widget.Image.Name" xml:space="preserve">
+    <value>Image</value>
+  </data>
+  <data name="DancingGoatMVC.Widget.Testimonial.Description" xml:space="preserve">
+    <value>Displays a quotation with its author.</value>
+  </data>
+  <data name="DancingGoatMVC.Widget.Testimonial.Name" xml:space="preserve">
+    <value>Testimonial</value>
+  </data>
+  <data name="DancingGoatMVC.PageTemplate.LandingPageSingleColumn.FirstColor" xml:space="preserve">
+    <value>Brick red</value>
+  </data>
+  <data name="DancingGoatMVC.PageTemplate.LandingPageSingleColumn.HeaderColor" xml:space="preserve">
+    <value>Background color of header</value>
+  </data>
+  <data name="DancingGoatMVC.PageTemplate.LandingPageSingleColumn.SecondColor" xml:space="preserve">
+    <value>Just blue</value>
+  </data>
+  <data name="DancingGoatMVC.PageTemplate.LandingPageSingleColumn.ShowLogo" xml:space="preserve">
+    <value>Display logo</value>
+  </data>
+  <data name="DancingGoatMVC.PageTemplate.LandingPageSingleColumn.ThirdColor" xml:space="preserve">
+    <value>Dark gray</value>
+  </data>
+  <data name="dancinggoatmvc.pagetemplate.articlewithsidebar.name" xml:space="preserve">
+    <value>Article detail with sidebar</value>
+  </data>
+  <data name="dancinggoatmvc.pagetemplate.articlewithsidebar.description" xml:space="preserve">
+    <value>Displays an article detail with related articles on the right side.</value>
+  </data>
+  <data name="dancinggoatmvc.pagetemplate.articlewithsidebar.sidebarlocation" xml:space="preserve">
+    <value>Sidebar location</value>
+  </data>
+  <data name="dancinggoatmvc.pagetemplate.articlewithsidebar.articlewidth" xml:space="preserve">
+    <value>Article width</value>
+  </data>
+  <data name="dancinggoatmvc.pagetemplate.articlewithsidebar.left" xml:space="preserve">
+    <value>Left</value>
+  </data>
+  <data name="dancinggoatmvc.pagetemplate.articlewithsidebar.right" xml:space="preserve">
+    <value>Right</value>
+  </data>
+  <data name="dancinggoatmvc.pagetemplate.article.name" xml:space="preserve">
+    <value>Article detail</value>
+  </data>
+  <data name="dancinggoatmvc.pagetemplate.article.description" xml:space="preserve">
+    <value>Displays an article detail with related articles underneath.</value>
+  </data>
+  <data name="DancingGoatMVC.Widget.Banner.LinkUrl" xml:space="preserve">
+    <value>Link URL</value>
+  </data>
+  <data name="DancingGoatMVC.Widget.Banner.LinkTitle" xml:space="preserve">
+    <value>Link title</value>
+  </data>
+  <data name="DancingGoatMVC.Widget.ProductCard.Description" xml:space="preserve">
+    <value>Displays a product.</value>
+  </data>
+  <data name="DancingGoatMVC.Widget.ProductCard.Name" xml:space="preserve">
+    <value>Product card</value>
+  </data>
+  <data name="DancingGoatMVC.Widget.ProductCard.SelectedProduct" xml:space="preserve">
+    <value>Selected product</value>
+  </data>
+  <data name="DancingGoatMVC.Widget.HeroImage.BackgroundImage" xml:space="preserve">
+    <value>Background image</value>
+  </data>
+  <data name="dancinggoatmvc.widget.cafecard.description" xml:space="preserve">
+    <value>Displays a cafe with its background image.</value>
+  </data>
+  <data name="dancinggoatmvc.widget.cafecard.name" xml:space="preserve">
+    <value>Cafe</value>
+  </data>
+  <data name="DancingGoatMVC.Widget.CafeCard.SelectedCafe" xml:space="preserve">
+    <value>Cafe</value>
+  </data>
+  <data name="dancinggoatmvc.widget.cafecard.nocafeselected" xml:space="preserve">
+    <value>No cafe selected</value>
+  </data>
+  <data name="DancingGoatMVC.InlineEditors.ImageMediaUploader.DropText" xml:space="preserve">
+    <value>Drop image to &lt;a class="dz-clickable"&gt;upload&lt;/a&gt; or &lt;a class="dialog-link"&gt;browse&lt;/a&gt; media library</value>
+  </data>
+  <data name="DancingGoatMVC.Widget.NewsletterSubscription.Description" xml:space="preserve">
+    <value>Displays a form for newsletter subscription.</value>
+  </data>
+  <data name="DancingGoatMVC.Widget.NewsletterSubscription.Name" xml:space="preserve">
+    <value>Newsletter subscription</value>
+  </data>
+  <data name="DancingGoatMVC.Widget.CTAButton.Description" xml:space="preserve">
+    <value>Call to action button with configurable target page.</value>
+  </data>
+  <data name="DancingGoatMVC.Widget.CTAButton.Name" xml:space="preserve">
+    <value>CTA button</value>
+  </data>
+  <data name="DancingGoatMVC.Widget.CTAButton.LinkUrl" xml:space="preserve">
+    <value>Link URL</value>
+  </data>
+  <data name="DancingGoatMVC.Section.Title.Label" xml:space="preserve">
+    <value>Title</value>
+  </data>
+  <data name="DancingGoatMVC.Widget.CTAButton.OpenInNewTab" xml:space="preserve">
+    <value>Open in a new tab</value>
+  </data>
+  <data name="DancingGoatMVC.Widget.Banner.LinkUrl.Placeholder" xml:space="preserve">
+    <value>Please enter a URL or select a page...</value>
+  </data>
+  <data name="DancingGoatMVC.Widget.CTAButton.LinkUrl.Placeholder" xml:space="preserve">
+    <value>Please enter a URL or select a page...</value>
+  </data>
+</root>
