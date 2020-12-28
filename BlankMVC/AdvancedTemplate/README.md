@@ -1,4 +1,4 @@
-To create a template for [advanced routes](https://docs.xperience.io/developing-websites/implementing-routing/content-tree-based-routing/setting-up-content-tree-based-routing#Settingupcontenttreebasedrouting-Advanced) based on the content tree:
+To create a template with a custom controller using content tree routing:
 
 1. Create a [template controller](https://github.com/kentico-ericd/xperience-template-samples/blob/master/BlankMVC/AdvancedTemplate/MyAdvancedController.cs) that inherits `PageTemplateController`
 1. __(Optional)__ Create page template [properties class](https://github.com/kentico-ericd/xperience-template-samples/blob/master/BlankMVC/AdvancedTemplate/AdvancedTemplateProperties.cs) and reference it in the [controller class](https://github.com/kentico-ericd/xperience-template-samples/blob/master/BlankMVC/AdvancedTemplate/MyAdvancedController.cs#L9)
